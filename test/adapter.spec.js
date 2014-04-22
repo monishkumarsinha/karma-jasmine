@@ -45,7 +45,7 @@ describe('jasmine adapter', function(){
 
     it('should report all spec names', function(){
       spyOn(karma, 'info').andCallFake(function(info){
-        expect(info.total).toBe(2);
+        expect(info.total).toBe(1);
         expect(info.specs).toEqual({
           one: {
             nested: {
